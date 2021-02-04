@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+bash ./.utils/message.sh text ''
+bash ./.utils/message.sh text '  /$$      /$$ /$$        /$$$$$$  /$$   /$$       /$$$$$$$  /$$$$$$$$ /$$    /$$ '
+bash ./.utils/message.sh text ' | $$  /$ | $$| $$       /$$__  $$| $$$ | $$      | $$__  $$| $$_____/| $$   | $$ '
+bash ./.utils/message.sh text ' | $$ /$$$| $$| $$      | $$  \__/| $$$$| $$      | $$  \ $$| $$      | $$   | $$ '
+bash ./.utils/message.sh text ' | $$/$$ $$ $$| $$      |  $$$$$$ | $$ $$ $$      | $$  | $$| $$$$$   |  $$ / $$/ '
+bash ./.utils/message.sh text ' | $$$$_  $$$$| $$       \____  $$| $$  $$$$      | $$  | $$| $$__/    \  $$ $$/  '
+bash ./.utils/message.sh text ' | $$$/ \  $$$| $$       /$$  \ $$| $$\  $$$      | $$  | $$| $$        \  $$$/   '
+bash ./.utils/message.sh text ' | $$/   \  $$| $$$$$$$$|  $$$$$$/| $$ \  $$      | $$$$$$$/| $$$$$$$$   \  $/    '
+bash ./.utils/message.sh text ' |__/     \__/|________/ \______/ |__/  \__/      |_______/ |________/    \_/     '

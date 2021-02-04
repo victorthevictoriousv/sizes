@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.15s linear;
+
+  svg.icon-site-logo {
+    width: 100px;
+    height: 40px;
+    transition: all 0.15s linear;
+
+    @include respond-above(xxs) {
+      width: 160px;
+      height: 100px;
+    }
+  }
+
+  &__scrolled {
+    background: linear-gradient(
+      180deg,
+      rgba(black, 0.5) 0%,
+      rgba(black, 0.3) 60%,
+      rgba(black, 0) 100%
+    );
+
+    svg.icon-site-logo {
+      width: 100px;
+      height: 40px;
+    }
+
+    .admin-bar &.header {
+      top: 0;
+
+      @include respond-above(admin-bar) {
+        top: 32px;
+      }
+    }
+  }
+
+  &__content {
+    margin: 0 $space-s;
+
+    @include respond-above(lg) {
+      margin: 0 $space-l;
+    }
+  }
+
+  &__logo {
+    z-index: 1;
+  }
+
+  .admin-bar & {
+    top: 46px;
+
+    @include respond-above(admin-bar) {
+      top: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+  }
+}

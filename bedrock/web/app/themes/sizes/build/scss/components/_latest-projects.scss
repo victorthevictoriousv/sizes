@@ -1,0 +1,112 @@
+.latest-projects {
+  background-color: $grey;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+
+    @include respond-above(sm) {
+      flex-direction: row;
+    }
+
+    & > :first-child {
+      margin-bottom: $space-l;
+
+      @include respond-above(sm) {
+        margin-bottom: 0;
+      }
+    }
+
+    & > :last-child {
+      @include respond-above(sm) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-above(sm) {
+      width: 48%;
+    }
+
+    & > h3 {
+      font-size: 32px;
+      margin-top: 0;
+
+      @include respond-above(xs) {
+        font-size: 42px;
+      }
+    }
+
+    & > .link {
+      align-self: flex-end;
+      margin-right: $space-l;
+      margin-top: $space-l;
+    }
+  }
+
+  &__image {
+    height: 400px;
+    width: auto;
+    background-size: cover;
+    background-color: #000;
+  }
+
+  &__info {
+    width: 80%;
+    background-color: #fff;
+    padding: $space-s $space-m $space-m $space-m;
+    margin-top: -120px;
+
+    @include respond-above(sm) {
+      padding: $space-s $space-l $space-l $space-l;
+    }
+
+    .link {
+      display: inline-block;
+    }
+  }
+
+  &__details {
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+
+    @include respond-above(sm) {
+      flex-wrap: nowrap;
+    }
+
+    & > :not(:last-child) {
+      margin-right: $space-s;
+    }
+
+    span:first-of-type {
+      font-weight: 700;
+      margin-bottom: 3px;
+
+      @include respond-above(sm) {
+        margin-bottom: $space-s;
+      }
+    }
+
+    span {
+      display: block;
+    }
+
+    span:last-of-type {
+      color: tint($dark, 50%);
+      margin-bottom: $space-s;
+
+      @include respond-above(sm) {
+        margin-bottom: $space-m;
+      }
+    }
+  }
+}

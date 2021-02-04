@@ -1,0 +1,25 @@
+.menu-toggle {
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.15s ease-in;
+
+  .site--menu-open & {
+    z-index: 1;
+    transform: rotate(-90deg);
+  }
+
+  svg {
+    color: $brand;
+
+    .site--menu-open & {
+      color: $white;
+    }
+  }
+
+  @include respond-above(md) {
+    display: none;
+  }
+}

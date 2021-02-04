@@ -1,0 +1,44 @@
+.teaser-with-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond-above(xs) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: $space-l;
+
+    @include respond-above(xs) {
+      width: 30%;
+    }
+
+    p {
+      color: tint($dark, 50%);
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  .link {
+    &::after {
+      width: 96% !important;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+# Bedrock
+bedrock/web/app/plugins/*
+!bedrock/web/app/plugins/.gitkeep
+bedrock/web/app/mu-plugins/*/
+bedrock/web/app/upgrade
+bedrock/web/app/uploads/*
+!bedrock/web/app/uploads/.gitkeep
+
+# Styles & Scripts
+bedrock/web/app/themes/**/dist
+
+# Vendor (e.g. Composer)
+bedrock/vendor/*
+!bedrock/vendor/.gitkeep
+
+# WordPress
+bedrock/web/wp
+bedrock/web/.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Dev
+backup
+node_modules
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# OS
+.DS_Store

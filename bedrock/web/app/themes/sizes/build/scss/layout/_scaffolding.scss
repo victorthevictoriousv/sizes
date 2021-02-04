@@ -1,0 +1,27 @@
+.container {
+  padding-right: $space-s;
+  padding-left: $space-s;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $container;
+}
+
+.section {
+  padding-top: $space-l;
+  padding-bottom: $space-l;
+
+  @include respond-above(xs) {
+    padding-top: $space-l * 2;
+    padding-bottom: $space-l * 2;
+  }
+
+  &__small {
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+  }
+
+  &__content {
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+  }
+}

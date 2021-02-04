@@ -1,0 +1,33 @@
+.icon {
+  display: inline-block;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  &--xs {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--sm {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--md {
+    width: 36px;
+    height: 36px;
+  }
+
+  &--lg {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--xl {
+    width: 72px;
+    height: 72px;
+  }
+}

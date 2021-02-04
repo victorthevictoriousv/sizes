@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  color: $white;
+
+  .container {
+    width: $container;
+  }
+
+  &__title {
+    font-size: 40px;
+    width: 100%;
+
+    @include respond-above(xs) {
+      font-size: 60px;
+    }
+
+    @include respond-above(lg) {
+      font-size: 80px;
+      width: 80%;
+    }
+
+    span:first-of-type {
+      display: block;
+      font-size: 32%;
+      font-weight: 400;
+      color: shade($white, 10%);
+
+      @include respond-above(lg) {
+        font-size: 20%;
+      }
+    }
+
+    span:last-of-type {
+      margin: $space-m 0;
+      display: block;
+    }
+  }
+
+  .admin-bar & {
+    height: calc(100vh - 46px);
+
+    @include respond-above(admin-bar) {
+      height: calc(100vh - 32px);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/* 
+  TABLE OF CONTENTS
+*/
+
+// 1. CONFIG (Configuration variables & maps)
+@import "config/functions"; // Custom SCSS function
+@import "config/mixins"; // Custom SCSS mixins
+@import "config/colors"; // Color variables
+@import "config/typography"; // Typography variables
+@import "config/spacings"; // Space variables
+@import "config/maps"; // Map variables
+
+// 2. TOOLS (Vendor libraries)
+
+// 3. GENERAL (Bootstraping, resets)
+@import "~sanitize.css";
+
+// 4. ELEMENTS (CSS elements, no selectors)
+@import "elements/base"; // Base elements ex. body, section
+
+// 5. LAYOUT (Low specifity classes with no cosmetics, for defining layout of big sections such as site-header etc.)
+@import "layout/scaffolding"; // Overall scaffolding
+@import "layout/site";
+@import "layout/header";
+@import "layout/footer";
+
+// 6. COMPONENTS (UI components with cosmetics)
+@import "components/buttons";
+@import "components/cookie-notice";
+@import "components/menu";
+@import "components/menu-toggle";
+@import "components/icon";
+@import "components/latest-projects";
+@import "components/latest-press-release";
+@import "components/teaser-with-icons";
+@import "components/teaser-with-image-background";
+@import "components/hero";
+@import "components/investors";
+@import "components/teaser";
+
+// 7. SUPERIOR (Overrides & helper classes)
+@import "superior/helpers"; // Helper classes

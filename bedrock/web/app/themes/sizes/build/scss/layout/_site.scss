@@ -1,0 +1,21 @@
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .admin-bar & {
+    min-height: calc(100vh - 46px);
+
+    @include respond-above(admin-bar) {
+      min-height: calc(100vh - 32px);
+    }
+  }
+
+  &__header {
+    padding: $space-s 0;
+  }
+
+  &__main {
+    flex: 1;
+  }
+}

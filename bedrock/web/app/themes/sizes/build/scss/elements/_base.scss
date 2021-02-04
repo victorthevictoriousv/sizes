@@ -1,0 +1,71 @@
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  & ::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
+body {
+  color: $dark;
+  font-family: $font;
+  line-height: 1.2;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 1em 0;
+}
+
+p {
+  font-size: $font-size;
+  font-weight: 400;
+}
+
+a,
+a::after,
+a::before {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ul::after,
+ul::before {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  color: $brand;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(100% + 4px);
+    height: 3px;
+    width: 120%;
+    background-color: $brand;
+  }
+}

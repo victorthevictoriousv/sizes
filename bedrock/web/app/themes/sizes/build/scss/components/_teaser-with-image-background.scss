@@ -1,0 +1,49 @@
+.teaser-with-image-background {
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($brand, 0.92);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include respond-above(xs) {
+      flex-direction: row;
+    }
+  }
+
+  p {
+    font-size: 32px;
+    font-weight: 700;
+    width: 100%;
+
+    @include respond-above(xs) {
+      font-size: 42px;
+      width: 70%;
+    }
+  }
+
+  .link {
+    color: $white;
+    align-self: flex-end;
+    margin-right: $space-l;
+
+    &::after {
+      background-color: $white;
+    }
+  }
+}

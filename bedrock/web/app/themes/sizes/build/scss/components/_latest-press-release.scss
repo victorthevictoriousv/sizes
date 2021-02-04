@@ -1,0 +1,48 @@
+.latest-press-release {
+  background-color: $grey;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-above(sm) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: $space-l;
+
+    @include respond-above(sm) {
+      width: 32%;
+      margin-bottom: 0;
+    }
+
+    span {
+      text-transform: uppercase;
+      color: tint($dark, 50%);
+      font-size: 80%;
+      font-weight: 600;
+      word-spacing: 3px;
+    }
+
+    h2 {
+      font-size: inherit;
+    }
+
+    .link {
+      float: right;
+      margin-right: $space-l;
+
+      @include respond-above(sm) {
+        float: none;
+        margin-right: 0;
+      }
+    }
+  }
+}

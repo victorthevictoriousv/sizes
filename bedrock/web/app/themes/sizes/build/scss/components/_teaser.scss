@@ -1,0 +1,59 @@
+.teaser {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    & > :not(:last-child) {
+      margin-bottom: $space-l;
+    }
+
+    .teaser__card:nth-child(odd) {
+      @include respond-above(sm) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .teaser__card:nth-child(even) {
+      .teaser__details {
+        @include respond-above(sm) {
+          padding-left: $space-l;
+        }
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+
+    @include respond-above(sm) {
+      flex-direction: row;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+    @include respond-above(sm) {
+      height: 100%;
+      width: 50%;
+    }
+  }
+
+  &__details {
+    width: 100%;
+
+    @include respond-above(sm) {
+      width: 50%;
+    }
+  }
+}
